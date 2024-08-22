@@ -19,12 +19,13 @@
       '/i/grok',
       '/settings/monetization',
       'https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb',
+      '/jobs'
   ];
 
   function removeLinkElement() {
       document.querySelectorAll('a').forEach(link => {
           if (hrefsToRemove.includes(link.getAttribute('href'))) {
-              link.remove();
+            link.style.display = 'none';
           }
       });
   }
@@ -33,7 +34,7 @@
       var parentElement = document.querySelector(selector);
 
       if (parentElement && parentElement.firstChild) {
-          parentElement.removeChild(parentElement.firstChild);
+        parentElement.firstChild.style.display = 'none';
       }
   }
 
