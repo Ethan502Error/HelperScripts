@@ -9,10 +9,10 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-  'use strict';
+(function () {
+  "use strict";
 
-  const style = document.createElement('style');
+  const style = document.createElement("style");
 
   style.innerHTML = `
       /* Hide scrollbars for all elements */
@@ -34,5 +34,4 @@
   `;
 
   document.head.appendChild(style);
-
 })();
